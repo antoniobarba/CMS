@@ -5,7 +5,7 @@
 
 class Contact 
 {
-    public:
+public:
     Contact (const std::string& name, 
             const std::string& surname, 
             const std::string& number);
@@ -21,7 +21,7 @@ class Contact
     void setNumber(const std::string& number);
     const std::string& getNumber() const;
                         
-    //void display() const in the ;
+    bool isValid() const;
    
     private:
     std::string m_name;

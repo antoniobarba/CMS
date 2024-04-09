@@ -21,7 +21,11 @@ const std::string& Contact::getSurname() const{ return m_surname; }
 void Contact::setNumber(const std::string& number) { m_number = number; }
 
 const std::string& Contact::getNumber() const { return m_number; }
-      
+
+bool Contact::isValid() const
+{
+    return m_name != "" && m_surname != "";
+}
 
    
    
